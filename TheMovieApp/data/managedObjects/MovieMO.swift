@@ -17,6 +17,7 @@ extension MovieMO {
             movie?.id = data.id
             movie?.title = data.title ?? ""
             movie?.poster = data.poster ?? ""
+            movie?.overview = data.overview ?? ""
             movie?.voteAverage = data.voteAverage
             movie?.favorite = data.favorite
             movie?.releaseDate = data.releaseDate ?? Date()
@@ -31,6 +32,7 @@ extension MovieMO {
                 movieMO.id = movie.id
                 movieMO.title = movie.title
                 movieMO.poster = movie.poster
+                movieMO.overview = movie.overview
                 movieMO.voteAverage = movie.voteAverage
                 movieMO.releaseDate = movie.releaseDate
                 do {
